@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="itemlist">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ITEM LIST</title>
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+<nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#/">
+                <span class="glyphicon glyphicon-th-list" style="color:blue">
+                </span>
+                Item List
+            </a>
+        </div>
+    </div>
+</nav>
+<div class="container" ng-view>
+</div>
+<script src="bootstrap/js/jquery.min.js"></script>
+<script src="bootstrap/js/bootstrap.min.js"></script>
+<script src="bootstrap/js/underscore-min.js"></script>
+<script src="bootstrap/js/angular.min.js"></script>
+<script src="bootstrap/js/angular-route.min.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

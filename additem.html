@@ -1,0 +1,29 @@
+<div class="col-xs-12">
+    <div class="jumbotron text-center">
+        <h1>Add Any Item Below You Want</h1>
+    </div>
+    <form name="addform">
+        <div class="alert alert-danger" role="alert" ng-show="addform.$dirty && !addform.$valid">
+            <span class="glyphicon glyphicon-exclamation-sign"></span>
+            Enter a valid item!
+        </div>
+        <div class="form-group">
+            <input type="text" ng-pattern="/^[a-zA-Z]*$/" class="form-control" placeholder="Item Name" ng-model="Item.itemName" required>
+        </div>
+        <div class="form-group">
+            <input type="text" class="form-control" placeholder="Item Quantity" ng-model="Item.itemquantity" required>
+        </div>
+        <div class="form-group">
+            <button type="button" class="btn btn-success btn-lg btn-block" ng-click="addform.$valid && save()">
+                <span class="glyphicon glyphicon-plus"></span>
+                ADD
+            </button>
+        </div>
+        <div class="form-group">
+            <a href="#/" class="btn btn-danger btn-lg btn-block">
+                <span class="glyphicon glyphicon-remove"></span>
+                CANCEL
+            </a>
+        </div>
+    </form>
+</div>
