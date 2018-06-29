@@ -1,2 +1,2 @@
-# todo-app
-simple angularjs todo app
+# note(item)-app
+simple angularjs itemlist app to note down item to buy.
